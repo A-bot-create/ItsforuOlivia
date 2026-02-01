@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Will you be my valentine?</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Great+Vibes&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="Style.css" />
+  </head>
+  <body>
+    <main class="page">
+      <div class="card" role="dialog" aria-labelledby="title" aria-describedby="desc">
+        <div class="teddy" aria-hidden="true">
+          <!-- Simple teddy SVG as placeholder -->
+          <svg width="220" height="160" viewBox="0 0 220 160" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+              <linearGradient id="g" x1="0" x2="1">
+                <stop offset="0" stop-color="#FFD6DD" />
+                <stop offset="1" stop-color="#FFB3C1" />
+              </linearGradient>
+            </defs>
+            <rect x="0" y="0" width="220" height="160" rx="12" fill="none" />
+            <g transform="translate(16,8)">
+              <ellipse cx="92" cy="60" rx="60" ry="50" fill="url(#g)" />
+              <circle cx="42" cy="26" r="22" fill="#FEC7D0" />
+              <circle cx="142" cy="26" r="22" fill="#FEC7D0" />
+              <circle cx="72" cy="58" r="6" fill="#30211E" />
+              <circle cx="112" cy="58" r="6" fill="#30211E" />
+              <path d="M86 76 q6 8 18 0" stroke="#C63B59" stroke-width="3" fill="none" stroke-linecap="round"/>
+              <path d="M122 12 q8 -6 18 2" fill="#FF6B8A" />
+            </g>
+          </svg>
+        </div>
+
+        <h1 id="title"><span class="name-olivia">Olivia</span> Will you be my valentine?</h1>
+        <p id="desc" class="hint">"No" button is a bit shy 😈</p>
+
+        <div class="actions" id="actions">
+          <button id="yes" class="btn btn-yes" aria-label="Yes, I will be your valentine">Yes</button>
+          <button id="no" class="btn btn-no" aria-label="No, I won't" data-moves="0">No</button>
+        </div>
+
+        <div id="messageYes" class="message-yes" style="display:none;margin-top:20px;font-size:20px;color:#FF6B8A;font-weight:bold;"></div>
+        
+        <div id="messageEnglish" class="message-english" style="display:none;margin-top:30px;font-size:24px;color:#FF6B8A;font-weight:bold;line-height:1.6;animation:slideInUp 1s ease-out;"></div>
+        
+        <div id="messageCaptivating" class="message-captivating" style="display:none;margin-top:25px;font-size:16px;color:#555;font-style:italic;line-height:1.8;animation:fadeIn 1.5s ease-out 1s both;"></div>
+
+        <div id="ariaAnnounce" class="sr-only" aria-live="polite"></div>
+      </div>
+    </main>
+
+    <script src="Script.js" defer></script>
+  </body>
+</html>
