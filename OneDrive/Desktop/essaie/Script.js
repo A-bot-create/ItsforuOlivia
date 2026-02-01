@@ -128,6 +128,13 @@
     messageYes.textContent = 'Je suis heureux! 😊💖';
     messageYes.style.display = 'block';
     
+    // Afficher l'image d'Olivia après un délai
+    const oliviaImage = document.getElementById('oliviaImage');
+    setTimeout(() => {
+      oliviaImage.innerHTML = '<img src="gf.jpg" alt="Olivia" />';
+      oliviaImage.style.display = 'block';
+    }, 600);
+    
     // Afficher le message en anglais après un délai
     const messageEnglish = document.getElementById('messageEnglish');
     setTimeout(() => {
