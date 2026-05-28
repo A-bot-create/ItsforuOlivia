@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ben & Olivia — Notre Histoire 💕</title>
+  <meta name="description" content="Le site des souvenirs de Ben et Olivia, une histoire d'amour depuis le 7 avril 2024." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- ========== CANVAS PARTICLES ========== -->
+  <canvas id="heartCanvas"></canvas>
+
+  <!-- ========== NAVIGATION ========== -->
+  <nav id="navbar">
+    <div class="nav-logo">B <span class="heart-nav">♥</span> O</div>
+    <ul class="nav-links">
+      <li><a href="#hero">Accueil</a></li>
+      <li><a href="#counter">Compteur</a></li>
+      <li><a href="#timeline">Notre Histoire</a></li>
+      <li><a href="#gallery">Galerie</a></li>
+      <li><a href="#videos">Vidéos</a></li>
+      <li><a href="#game">Notre Jeu</a></li>
+      <li><a href="#letter">Lettre</a></li>
+      <li><a href="birthday.html" class="nav-birthday">🎂 My Girlfriend Birthday</a></li>
+    </ul>
+    <div class="nav-toggle" id="navToggle">☰</div>
+  </nav>
+
+  <!-- ========== HERO SECTION ========== -->
+  <section id="hero">
+    <div class="petals-container" id="petals"></div>
+    <div class="hero-content">
+      <p class="hero-subtitle fade-in-up">Une histoire d'amour entre</p>
+      <h1 class="hero-title fade-in-up delay-1">
+        <span class="name-ben">Ben</span>
+        <span class="hero-and">&amp;</span>
+        <span class="name-olivia">Olivia</span>
+      </h1>
+      <p class="hero-date fade-in-up delay-2">Depuis le <span class="highlight-date">7 Avril 2024</span></p>
+      <div class="hero-divider fade-in-up delay-3">
+        <span></span><span class="diamond">♦</span><span></span>
+      </div>
+      <p class="hero-quote fade-in-up delay-4">"Chaque moment avec toi est un souvenir que je veux garder pour toujours."</p>
+      <a href="#counter" class="cta-btn fade-in-up delay-5">Découvrir notre histoire ↓</a>
+    </div>
+    <div class="scroll-indicator">
+      <div class="scroll-dot"></div>
+    </div>
+  </section>
+
+  <!-- ========== COUNTER SECTION ========== -->
+  <section id="counter">
+    <div class="section-header">
+      <p class="section-tag">Ensemble depuis</p>
+      <h2 class="section-title">Notre Temps d'Amour</h2>
+    </div>
+    <div class="counter-grid">
+      <div class="counter-card" id="c-years">
+        <div class="counter-value" data-target="years">0</div>
+        <div class="counter-label">Ans</div>
+      </div>
+      <div class="counter-card" id="c-months">
+        <div class="counter-value" data-target="months">0</div>
+        <div class="counter-label">Mois</div>
+      </div>
+      <div class="counter-card" id="c-days">
+        <div class="counter-value" data-target="days">0</div>
+        <div class="counter-label">Jours</div>
+      </div>
+      <div class="counter-card" id="c-hours">
+        <div class="counter-value" data-target="hours">0</div>
+        <div class="counter-label">Heures</div>
+      </div>
+      <div class="counter-card" id="c-minutes">
+        <div class="counter-value" data-target="minutes">0</div>
+        <div class="counter-label">Minutes</div>
+      </div>
+      <div class="counter-card" id="c-seconds">
+        <div class="counter-value" data-target="seconds">0</div>
+        <div class="counter-label">Secondes</div>
+      </div>
+    </div>
+    <p class="counter-message">…et chaque seconde compte ♥</p>
+  </section>
+
+  <!-- ========== TIMELINE SECTION ========== -->
+  <section id="timeline">
+    <div class="section-header">
+      <p class="section-tag">Nos moments</p>
+      <h2 class="section-title">Notre Histoire</h2>
+    </div>
+    <div class="timeline-container">
+
+      <div class="timeline-item left reveal">
+        <div class="timeline-dot">💌</div>
+        <div class="timeline-card">
+          <span class="timeline-date">7 Avril 2024</span>
+          <h3>Le Début de Tout</h3>
+          <p>Ce jour où tout a commencé. Le premier regard, le premier sourire… le début de la plus belle aventure de notre vie.</p>
+        </div>
+      </div>
+
+      <div class="timeline-item right reveal">
+        <div class="timeline-dot">☕</div>
+        <div class="timeline-card">
+          <span class="timeline-date">À compléter</span>
+          <h3>Premier Rendez-vous</h3>
+          <p>Ajoute ici le souvenir de votre premier rendez-vous. Je garderai ce moment pour toujours dans mon cœur.</p>
+        </div>
+      </div>
+
+      <div class="timeline-item left reveal">
+        <div class="timeline-dot">🌙</div>
+        <div class="timeline-card">
+          <span class="timeline-date">À compléter</span>
+          <h3>Notre Première Nuit Étoilée</h3>
+          <p>Ce soir sous les étoiles où on a parlé jusqu'à l'aube, sans voir le temps passer.</p>
+        </div>
+      </div>
+
+      <div class="timeline-item right reveal">
+        <div class="timeline-dot">✈️</div>
+        <div class="timeline-card">
+          <span class="timeline-date">À compléter</span>
+          <h3>Notre Premier Voyage</h3>
+          <p>La première aventure ensemble. Les découvertes, les rires et les souvenirs qui ne s'effacent jamais.</p>
+        </div>
+      </div>
+
+      <div class="timeline-item left reveal">
+        <div class="timeline-dot">🎂</div>
+        <div class="timeline-card">
+          <span class="timeline-date">7 Avril 2025</span>
+          <h3>Notre Premier Anniversaire 🎉</h3>
+          <p>Un an d'amour, de complicité, de tendresse. Un an de toi, et je ne changerais rien du monde.</p>
+        </div>
+      </div>
+
+    </div>
+    <p class="timeline-note">✏️ <em>D'autres moments seront ajoutés au fil du temps…</em></p>
+  </section>
+
+  <!-- ========== GALLERY SECTION ========== -->
+  <section id="gallery">
+    <div class="section-header">
+      <p class="section-tag">Nos photos</p>
+      <h2 class="section-title">Notre Galerie</h2>
+    </div>
+    <div class="gallery-grid" id="galleryGrid">
+
+      <!-- Les photos seront injectées dynamiquement par main.js -->
+
+    </div>
+    <p class="gallery-note">📸 <em>Envoie-moi tes photos et je les intègrerai ici !</em></p>
+  </section>
+
+  <!-- ========== LIGHTBOX ========== -->
+  <div id="lightbox" class="lightbox" onclick="closeLightbox()">
+    <div class="lightbox-inner" onclick="event.stopPropagation()">
+      <button class="lightbox-close" onclick="closeLightbox()">✕</button>
+      <button class="lightbox-prev" onclick="changeLightbox(-1)">‹</button>
+      <img id="lightboxImg" src="" alt="Photo" />
+      <button class="lightbox-next" onclick="changeLightbox(1)">›</button>
+      <p id="lightboxCaption" class="lightbox-caption"></p>
+    </div>
+  </div>
+
+  <!-- ========== VIDEOS SECTION ========== -->
+  <section id="videos">
+    <div class="section-header">
+      <p class="section-tag">Nos vidéos</p>
+      <h2 class="section-title">Nos Moments en Vidéo</h2>
+    </div>
+    <div class="videos-grid">
+
+      <!-- Les vidéos seront injectées dynamiquement par main.js -->
+
+    </div>
+    <p class="videos-note">🎬 <em>Envoie-moi tes vidéos et je les intègrerai ici !</em></p>
+  </section>
+
+  <!-- ========== GAME SECTION ========== -->
+  <section id="game">
+    <div class="section-header">
+      <p class="section-tag">Moment complice</p>
+      <h2 class="section-title">Notre Jeu d'Amour</h2>
+    </div>
+    <div class="game-container reveal">
+      <div class="game-card" id="gameCard" onclick="nextQuestion()">
+        <p class="question-text" id="questionText">Prêts pour une question ?</p>
+        <button class="game-btn">Question suivante ♥</button>
+        <p class="game-hint">Cliquez sur la carte pour changer</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== LETTER SECTION ========== -->
+  <section id="letter">
+    <div class="envelope-wrapper reveal">
+      <div class="envelope" id="envelope" onclick="openEnvelope()">
+        <div class="envelope-flap"></div>
+        <div class="envelope-body">
+          <div class="envelope-seal">
+            <span>♥</span>
+          </div>
+          <p class="envelope-hint">Clique pour ouvrir</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="letter-content" id="letterContent">
+      <div class="section-header">
+        <p class="section-tag">Pour toi</p>
+        <h2 class="section-title">Ma Lettre d'Amour</h2>
+      </div>
+      <div class="letter-paper">
+        <div class="letter-lines"></div>
+        <div class="letter-text" id="letterText">
+          <p class="letter-salutation">Ma très chère Olivia,</p>
+          <p id="typewriterText"></p>
+          <p class="letter-signature">Avec tout mon amour,<br/><span class="signature-name">Ben ♥</span></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== FOOTER ========== -->
+  <footer id="footer">
+    <div class="footer-hearts">
+      <span class="footer-heart" style="animation-delay:0s">♥</span>
+      <span class="footer-heart" style="animation-delay:0.3s">♥</span>
+      <span class="footer-heart" style="animation-delay:0.6s">♥</span>
+      <span class="footer-heart" style="animation-delay:0.9s">♥</span>
+      <span class="footer-heart" style="animation-delay:1.2s">♥</span>
+    </div>
+    <p class="footer-names">Ben <span>♥</span> Olivia</p>
+    <p class="footer-date">Ensemble depuis le 7 Avril 2024</p>
+    <p class="footer-copy">Fait avec ♥ rien que pour toi</p>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
