@@ -560,7 +560,9 @@ function tick() {
   const frac = elapsed / DAY_S;
   ring.style.strokeDashoffset = CIRCUMFERENCE * (1 - frac);
 
-  setTimeout(tick, 1000);
+  // Sync exactly to the next second boundary — eliminates drift
+  const msNow = new Date().getMilliseconds();
+  setTimeout(tick, 1000 - msNow);
 }
 tick();
 
